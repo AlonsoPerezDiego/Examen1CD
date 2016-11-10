@@ -18,8 +18,13 @@ public class ExCOD1Av {
      */
     public static void main(String[] args) {
         
-        int base = 2;
-        int altura = 7;
+        int base = Integer.parseInt(JOptionPane.showInputDialog("Introduce la base:"));
+        int altura = Integer.parseInt(JOptionPane.showInputDialog("Introduce la altura:"));
+        
+        while(base<=0|altura<=0){
+            base = Integer.parseInt(JOptionPane.showInputDialog("Introduce la base(mayor que 0):"));
+            altura = Integer.parseInt(JOptionPane.showInputDialog("Introduce la altura (mayor que 0):"));  
+        }
         
         JOptionPane.showMessageDialog(null, "El área del rectangulo es " + base * altura + " siendo la base y la altura "+ base + " y " + altura + " respectivamente.");
     }
