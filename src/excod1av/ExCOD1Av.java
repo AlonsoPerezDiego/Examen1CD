@@ -19,8 +19,7 @@ public class ExCOD1Av {
         int base = 2;
         int altura = 7;
         
-        int area = base * altura;
-        System.out.println("El área del rectangulo es " + area + " siendo la base y la altura "+ base + " y " + altura + " respectivamente.");
+        System.out.println("El área del rectangulo es " + base * altura + " siendo la base y la altura "+ base + " y " + altura + " respectivamente.");
     }
     
 }
